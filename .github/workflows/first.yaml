@@ -1,0 +1,21 @@
+name: testing workflow
+# to indicate an event we use on
+on: 
+    push:
+        branches: ["master"]
+
+jobs:
+    testing-testing:
+        runs-on: ubuntu-latest
+        steps:
+            - name : say hello
+              run: echo "hello world greetings"
+            
+            - name : say goodbye
+              run: echo "Goodbye for now"
+
+    # another-job:
+    #     runs-on: window-latest
+    #     steps:
+    #         - name :
+
